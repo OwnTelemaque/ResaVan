@@ -3,26 +3,7 @@ include "connexion.php";
 require "class.phpmailer.php";
 require "class.smtp.php";
 
-$mail = new PHPmailer();
-//ici ce qui t'interesse
-$mail->IsSMTP();
-$mail->Host = "mail.travelwithnico.com";
-$mail->SMTPAuth = true;
-$mail->CharSet = 'UTF-8';
-$mail->Username = 'nico.degouve@travelwithnico.com';
-$mail->Password = 'F@nette05';
-$mail->Port = 25;
-$mail->FromName = 'Travel with Nico';
-$mail->From='nico.degouve@travelwithnico.com';
-$mail->AddAddress('neo.degouve@laposte.net');
-//$mail->AddReplyTo('votre@adresse');	
-//$mail->Subject='Exemple trouvé sur DVP';
-//$mail->Body='Voici un exemple d\'e-mail au format Texte';
-$mail->Body = "coucou";                        //Création du corps du mail qui sera envoyé
-$mail->Subject = "Nico";  //Création du sujet du mail qui sera envoyé        
-$mail->Send();                                              //On s'envoie le petit email pour etre tenu informé de l'ajout d'un nouveau commentaire
-$mail->SmtpClose();                                         //Fermeture de la connection SMTP
-unset($mail);
+
 
 try
 {
