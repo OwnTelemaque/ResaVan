@@ -1,0 +1,648 @@
+/*///////////////////
+// General //
+/////////////////////*/
+
+
+a:visited {
+
+    color: black;
+    text-decoration:none; 
+
+}
+a:link
+{
+text-decoration:none;
+} 
+
+p {
+     color: rgba(255,228,0,0.9);
+     font-size: 18px;
+ }
+
+
+/*//////////////////////////////////////////////////////////
+// Index//
+///////////////////////*/
+
+html {
+  height: 100%;
+}
+
+
+
+body {
+  height: 100%;
+
+    background-image: url("images/ciel.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  margin: 0;
+  padding: 0;
+
+
+}
+
+
+
+#divIndexPrincipal {
+    width: 100%;
+    height: 100%;
+ //   background-color: rgba(199,0,57,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#divListeBateaux {
+
+    background-color: rgba(0,0,255,0.46);
+    width: 75%;
+    height: 75%;
+    overflow-y: scroll;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+#divNomBateaux{
+
+    color: #FFFFFF;
+
+
+
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: center;
+
+    }
+
+#divNomBateaux p {
+    color: white;
+}
+
+
+
+
+
+ /*///////////////////////
+// Page trip to eldons//
+///////////////////////*/
+
+
+
+ #divPagePrincipal{
+   // background-color: rgba(199,0,57,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #divFormulaireCache {
+
+     background-color: rgba(9,9,9, 0.5);
+     display: none;
+     width: 100%;
+     height: 100%;
+
+ }
+
+ #divFormulaireCacheDEL {
+
+     background-color: rgba(9,9,9, 0.5);
+     display: none;
+     width: 100%;
+     height: 100%;
+
+ }
+ 
+ #divStockeVariables{
+     display: none;
+ }
+
+ #Baniere {
+    display: flex;
+    //border: 1px solid red;
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    //height: max-content; 
+} 
+
+#Baniere p{
+    color: black;
+}
+
+#DivIconeHome{
+    //border: 1px solid blue;
+}
+
+#DivTitrePage {
+    //border: 1px solid grey;
+    height: max-content; 
+    text-align: center;
+    //height: 100%; 
+    /*background-color: #FFCC00;*/
+}
+#DivTitrePage p {
+    font-size: 50px;
+    color: rgba(255,101,80,0.9);
+    display: inline;
+
+}
+
+
+
+#DivSousBaniere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid green;
+    height: max-content; 
+   // height: 100%;
+    /*justify-content: center;*/
+
+}
+#DivSousBaniere p {
+    display: inline;
+}
+
+#welcome{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    //border: 1px solid black;
+    height: max-content; 
+}
+#welcome div{
+    margin-right: 10px;
+    height: max-content; 
+}
+
+#divEntreWelcomeFirst{
+    height: 10px;
+}
+
+
+#FirstTime{
+
+    height: max-content; 
+    cursor: pointer;
+    //border: 1px solid red;
+}
+#FirstTime p {
+    display: inline;
+}
+
+
+ #iconeHome {
+  height: 30px;
+  //draggable: true;
+  //display: inline;
+}
+
+
+
+
+
+
+#DivDeco{
+    display: flex;
+    /*border: 1px solid grey;*/
+}
+#DivDeco p{
+    color: white;
+}
+
+
+#DivConteneurPagePrincipale {     
+
+    width: 80%;
+   // background-color: rgba(255,195,0,1);
+    /*border: solid black 1px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#divFormulairesAdministrationVANS{
+    display: flex;
+ //   background-color: ;
+
+}
+
+#divEntre2Formulaires{
+    width: 100px;
+}
+
+
+ /*//////////////////////////////////////////////////////////
+// Tableau affichage Vans//
+///////////////////////*/
+
+ #divHautCalendrier{
+     width: 75%;
+     display: flex;
+     margin: 5px;
+     /*border: solid black 1px; */
+
+ }
+
+ #DivCalend1{
+     flex: 1;
+     margin: 5px;
+ }
+
+ #DivCalend2{
+     flex: 3;
+     text-align: center;
+     background-color: rgba(0,0,0,0.75);
+     border: 1px solid black;
+     border-radius: 10px;
+     margin: 5px;
+ }
+
+ #DivCalend3{
+     flex: 3;
+     text-align: center;
+     border: 1px solid black;
+     background-color: rgba(0,0,0,0.75);
+     border-radius: 10px;
+     margin: 5px;
+ }
+
+
+
+
+ #divHautCalendrier > div{
+     width: 100%;
+     text-align: center;
+ }
+
+
+
+
+ #divConteneur3Divs{
+    border-bottom: solid #dadada 1px; 
+
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+ }
+
+
+
+
+
+ #divConteneur3Divs > div{
+     width: 100%;
+     margin: 5px;
+     border-radius: 10px;
+ }
+
+ .Date{
+     text-align: center;
+     background-color: rgba(0,0,0,0.75);
+    /* border: solid black 1px; */
+    width: 150px;
+    flex: 1;
+ }
+
+
+
+
+ .NomCapitaine{
+     border: 1px solid black;
+     margin-right: 10px;
+ }
+
+
+
+  .VanBooke1 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(43,160,165,0.82);
+     flex: 3;
+ }
+
+ .VanBooke2 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(43,160,165,0.82);
+     flex: 3;
+ }
+
+  .VanFull1 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(255,228,0,0.9);
+     flex: 3;
+ }
+ .VanFull2 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(255,228,0,0.9);
+     flex: 3;
+ }
+
+ .VanNone1 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(243,240,233,0.86);
+     flex: 3;
+
+ }
+
+ .VanNone2 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(243,240,233,0.86);
+     flex: 3;
+ }
+
+
+
+
+
+  .VanBooke1:hover {
+      border: 1px solid white;
+  }
+
+  .VanBooke2:hover {
+      border: 1px solid white;
+  }
+
+  .VanNone1:hover {
+      border: 1px solid white;
+  }
+
+  .VanNone2:hover {
+      border: 1px solid white;
+  }
+
+
+
+ .divContenantCapitainesEtIconeSuppression{
+     display: flex;
+     padding: 5px;
+    // draggable: true;
+    /* border: 1px solid #6eb6ff;*/
+     width: max-content;                    /* Permet de reduire la largeur au minimum vital*/
+
+ }
+
+
+
+ .divCapitaineAffiche{
+
+     margin-right: 10px;
+     cursor: context-menu;
+  //   pointer-events: none;      //Cette ligne permnet d'eviter que 'le div divCapitaineAffiche ne soit utilise pour creer l'evenemt de drag et drop tactile. Cela le rend non reactif aux evenements
+     //draggable: true;   
+    // border: 1px solid #6eb6ff;
+ }
+
+  .divCapitaineAffiche p {
+     font-size: 14px;
+     color: black;
+     display: inline;
+ }
+
+
+
+ .imageDe11{
+     height: 18px;
+ }
+
+  .imageDel2{
+     height: 18px;
+ }
+
+  .iconeBricolage{
+     height: 18px;
+     margin-right: 10px;    
+ }
+
+
+ #divContenantTuto{
+
+
+
+    background-color: rgba(9,9,9, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ #divContenantTuto div{
+
+     width: 80%;
+     //border: 1px solid blue;
+ }
+
+ .divContenantImagestexteTuto{
+     display: flex;
+
+ }
+
+
+
+ #ReturnTuto{
+     color: white;
+     width: 100%;
+     text-align: center;
+     background-color: grey;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+
+
+ @media screen and (max-width: 1280px)
+{
+
+    body {
+
+    background-image: url("images/cielPhone.jpg");
+
+}
+
+ #Baniere {
+
+    width: 95%;
+
+}
+
+
+#DivTitrePage p {
+    font-size: 20px;
+    color: rgba(255,101,80,0.9);
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#DivSousBaniere{
+    width: max-content; 
+}
+
+#DivSousBaniere p {
+    display: inline;
+    font-size: 10px;
+}
+
+#welcome{
+    width: max-content; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#DivConteneurPagePrincipale {     
+
+    width: 100%;
+   // background-color: rgba(255,195,0,1);
+    /*border: solid black 1px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+ #divHautCalendrier{
+     width: 100%;
+     display: flex;
+     margin: 5px;
+     /*border: solid black 1px; */
+
+ }
+
+  #divHautCalendrier p{
+     font-size: 10px;
+ }
+
+ .Date{
+     text-align: center;
+     background-color: rgba(0,0,0,0.75);
+    /* border: solid black 1px; */
+    width: 100%;
+ }
+
+ .Date p {
+     font-size: 10px;
+
+ }
+
+
+#divConteneur3Divs{
+border-bottom: solid #dadada 1px; 
+
+width: 100%;
+display: flex;
+justify-content: center;
+color: black;
+}
+
+
+ .VanBooke1 {
+border: 1px solid #003333;
+width: 100%;
+background-color: rgba(43,160,165,0.82);
+
+ }
+
+ .VanBooke2 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(43,160,165,0.82);
+
+ }
+
+  .VanFull1 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(255,228,0,0.9);
+
+ }
+ .VanFull2 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(255,228,0,0.9);
+
+ }
+
+ .VanNone1 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(243,240,233,0.86);
+
+
+ }
+
+ .VanNone2 {
+     border: 1px solid #003333;
+     width: 100%;
+     background-color: rgba(243,240,233,0.86);
+
+ }
+
+ .divCapitaineAffiche p {
+     font-size: 12px;
+     color: black;
+     display: inline;
+     
+ }
+
+  .divCapitaineAffiche{
+
+     pointer-events: none;      //Cette ligne permnet d'eviter que 'le div divCapitaineAffiche ne soit utilise pour creer l'evenemt de drag et drop tactile. Cela le rend non reactif aux evenements
+
+ }
+ 
+ /*////////////////// TUTO ////////////////*/
+
+
+
+   .divContenantImagestexteTuto{
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+
+
+    .imgTuto{
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+
+}
